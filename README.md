@@ -1,5 +1,8 @@
 # `usb-can`, a simple and cost effective CAN link
 
+![bmc::labs `usb-can`](./pictures/render2.jpg "bmc::labs `usb-can`")
+_Rendering of `usb-can`, our version of the USBtin by Thomas Fischl_
+
 Be it for automation, development or debugging, one often needs a way to
 inspect a CAN bus. This device allows to connect to a CAN bus via a standard
 USB type C cable. It is based on the [USBtin by Thomas
@@ -49,14 +52,21 @@ install):
 
 ```bash
 » lsusb
-
+...
+Bus 002 Device 015: ID 04d8:000a Microchip Technology, Inc. CDC RS-232 Emulation Demo
+...
 ```
 
 If the device shows up here, you can look which serial port it is bound to:
 
 ```bash
 » sudo tail /var/log/kern.log
-
+Apr 18 14:53:17 rzrgrl kernel: [64635.125815] usb 2-2: new full-speed USB device number 15 using xhci_hcd
+Apr 18 14:53:17 rzrgrl kernel: [64635.276572] usb 2-2: New USB device found, idVendor=04d8, idProduct=000a, bcdDevice= 1.00
+Apr 18 14:53:17 rzrgrl kernel: [64635.276580] usb 2-2: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Apr 18 14:53:17 rzrgrl kernel: [64635.276583] usb 2-2: Product: USBtin
+Apr 18 14:53:17 rzrgrl kernel: [64635.276585] usb 2-2: Manufacturer: Microchip Technology, Inc.
+Apr 18 14:53:17 rzrgrl kernel: [64635.277670] cdc_acm 2-2:1.0: ttyACM0: USB ACM device
 ```
 
 In this case, it is `ttyACM0`, which should be similar for you.
