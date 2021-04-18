@@ -13,8 +13,14 @@ All examplatory output comes from a 2013 MacBook Pro running Debian.
 
 
 ## Use with Linux
-If you're on something Debian-based, you're best off starting by installing
-`can-utils` like so:
+Start by adding yourself to the `dialout` group if you aren't already in it:
+
+```bash
+» sudo usermod -aG dialout $USER
+```
+
+You'll need [`can-utils` for Linux](https://github.com/linux-can/can-utils).
+If you're on something Debian-based, you're best off installing them like so:
 
 ```bash
 » sudo apt install can-utils
