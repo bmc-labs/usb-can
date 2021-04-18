@@ -168,3 +168,9 @@ For macOS, there is code floating around the web for
 [`can-utils`](https://github.com/carloop/can-utils-osx), and once you have
 those working the above guide for Linux should mostly apply. No idea if it
 works, though - we don't do macOS right now.
+
+---
+_The contents of this repository which are our original work are release into
+the public domain unter The Unlicense (see [LICENSE](./LICENSE)). We build
+heavily on the work of others here and recommend you pay them tribute first if
+you like the material you've found here._
