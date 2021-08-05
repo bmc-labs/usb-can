@@ -1,6 +1,6 @@
 # `usb-can`, a simple and cost effective CAN link
 
-![bmc::labs `usb-can`](./pictures/render2.jpg "bmc::labs `usb-can`")
+![bmc::labs `usb-can`](./pictures/usb-can_pcb-complete_02.jpg "bmc::labs `usb-can`")
 _Rendering of `usb-can`, our version of the USBtin by Thomas Fischl_
 
 Be it for automation, development or debugging, one often needs a way to
