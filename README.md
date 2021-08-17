@@ -7,7 +7,7 @@ Be it for automation, development or debugging, one often needs a way to
 inspect a CAN bus. This device allows to connect to a CAN bus via a standard
 USB type C cable. It is based on the [USBtin by Thomas
 Fischl](https://www.fischl.de/usbtin/) - there are many great resources behind
-this link, and we encourage you to by Thomas' version from him!
+this link, and we encourage you to buy Thomas' version from him!
 
 All examplatory output comes from a 2013 MacBook Pro running Debian.
 
